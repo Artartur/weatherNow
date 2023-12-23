@@ -31,11 +31,12 @@ interface IApiData {
 
 export default function Card({ cityName }: ICard) {
   const [weatherData, setWeatherData] = useState<IApiData>();
+  const apiKey = import.meta.env?.VITE_REACT_APP_API_KEY;
 
   const getData = () => {
     axios
       .get(
-        `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${cityName}`
+        `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}`
       )
       .then((res) => {
         setWeatherData(res.data);
