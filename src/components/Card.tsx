@@ -76,7 +76,7 @@ export default function Card({ cityName }: ICard) {
   };
   useEffect(() => {
     getData();
-  }, []);
+  }, [cityName]);
 
   return (
     <div>
@@ -85,7 +85,7 @@ export default function Card({ cityName }: ICard) {
           <div className="card__container-content">
             <header>
               <Link to="/">
-                <FaArrowLeft size={30} />
+                <FaArrowLeft size={25} />
               </Link>
             </header>
             <div className="card__container-title">
