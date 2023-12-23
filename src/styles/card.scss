@@ -19,21 +19,19 @@
     justify-content: center;
     flex-direction: row;
     &-current {
-      font-size: 80px;
-      margin: 0 10px;
+      font-size: 50px;
+      margin: 0 5px;
     }
     &-others {
       display: flex;
       flex-direction: column;
-      font-size: 20px;
       justify-content: center;
 
       p {
-        font-size: 36px;
+        font-size: 30px;
       }
 
       &-maxMin {
-        margin: 23px 0;
         p {
           font-size: 18px;
         }
@@ -42,7 +40,6 @@
   }
 
   &-footer {
-    font-size: 25px;
     ul {
       display: flex;
       li {
@@ -50,7 +47,7 @@
         border-right: 1px solid white;
         display: flex;
         height: 20px;
-        padding: 0 13px;
+        padding: 0 5px;
         span {
           p {
             margin: 5px 0;
@@ -60,7 +57,7 @@
           }
 
           p:last-child {
-            font-size: 18px;
+            font-size: 12px;
           }
         }
       }
@@ -86,7 +83,7 @@
             color: rgba(194, 194, 194, 0.808);
           }
         }
-        &:last-child{
+        &:last-child {
           border: none;
         }
       }
@@ -104,7 +101,7 @@
     .card__container-footer {
       p {
         color: black;
-        &:first-child{
+        &:first-child {
           color: rgba(0, 0, 0, 0.514);
         }
       }
@@ -134,7 +131,7 @@
   }
 
   &-title {
-    font-size: 30px;
+    font-size: 20px;
     p {
       color: rgb(236, 236, 236);
     }
@@ -142,11 +139,10 @@
 
   &-weather-period {
     margin-bottom: 10%;
-    font-size: 25px;
     ul {
       display: flex;
       li {
-        margin: 0 20px;
+        margin: 0 3px;
       }
     }
   }
@@ -155,17 +151,77 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 30px 20px;
+    margin: 40px 20px;
     a {
       color: white;
     }
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
   .card__container {
-      &-weather-period{
-        margin-bottom: 4%;
+    &-degree {
+      &-current {
+        font-size: 60px;
       }
+      &-others {
+        p {
+          font-size: 25px;
+        }
+
+        &-maxMin {
+          padding: 8px 0;
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    &-footer {
+      ul {
+        li {
+          padding: 0 20px;
+          span {
+            p:first-child {
+              font-size: 18px;
+            }
+            p:last-child {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    &-title {
+      font-size: 30px;
+    }
+
+    &-weather-period {
+      margin-bottom: 4%;
+      ul {
+        li {
+          margin: 0 15px;
+          div {
+            font-size: 20px;
+            img {
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+    header{
+      margin: 40px 100px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .card__container {
+    header{
+      margin: 40px 400px;
+    }
   }
 }
