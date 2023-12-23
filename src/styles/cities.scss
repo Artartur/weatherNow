@@ -1,0 +1,24 @@
+.cities__container {
+  width: 200px;
+  ol {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+
+    li {
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .cities__container {
+    width: 400px;
+    ol {
+      font-size: 22px;
+      margin: 20px 0;
+    }
+  }
+}

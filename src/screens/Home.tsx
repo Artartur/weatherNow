@@ -1,6 +1,6 @@
 import "../styles/home.scss";
 import globe from "../assets/globe.gif";
-import { Link } from "react-router-dom";
+import Cities from "../components/Cities";
 export default function Home() {
   return (
     <div className="home__container">
@@ -12,28 +12,7 @@ export default function Home() {
         <img src={globe} />
       </div>
       <div className="home__container-cities">
-        <ol>
-          <li>
-            <Link to="/Dallol">Dallol</Link>
-          </li>
-          <li>
-          <Link to="/Fairbanks">Fairbanks</Link>
-          </li>
-          <li>
-          <Link to="/London">London</Link>
-          </li>
-        </ol>
-        <ol>
-          <li>
-          <Link to="/Recife">Recife</Link>
-          </li>
-          <li>
-          <Link to="/Vancouver">Vancouver</Link>
-          </li>
-          <li>
-          <Link to="/Yakutsk">Yakutsk</Link>
-          </li>
-        </ol>
+        <Cities/>
       </div>
     </div>
   );
