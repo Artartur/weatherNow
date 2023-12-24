@@ -10,7 +10,10 @@
   width: 100vw;
 
   &-globe {
-    margin: 30px 0;
+    margin: 20px 0;
+    img {
+      width: 200px;
+    }
   }
 
   &-title {
@@ -25,7 +28,7 @@
   .home__container {
     &-globe {
       img {
-        width: 150px;
+        width: 300px;
       }
     }
 
