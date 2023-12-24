@@ -1,0 +1,45 @@
+.footer__container {
+  ul {
+    display: flex;
+    li {
+      align-items: center;
+      border-right: 1px solid white;
+      display: flex;
+      height: 20px;
+      padding: 0 10px;
+      span {
+        p {
+          margin: 5px 0;
+        }
+        p:first-child {
+          color: rgba(255, 255, 255, 0.712);
+        }
+
+        p:last-child {
+          font-size: 12px;
+        }
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .footer__container {
+    ul {
+      li {
+        padding: 0 20px;
+        span {
+          p:first-child {
+            font-size: 18px;
+          }
+          p:last-child {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
