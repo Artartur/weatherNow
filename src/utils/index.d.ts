@@ -4,13 +4,11 @@ interface IAstro {
 }
 
 interface ICondition {
-  code: number;
   icon: string;
   text: string;
 }
 
 interface IDay {
-  condition: ICondition;
   maxtemp_c: string;
   mintemp_c: string;
 }

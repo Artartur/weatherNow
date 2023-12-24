@@ -14,59 +14,6 @@
     width: 100%;
   }
 
-  &-degree {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    &-current {
-      font-size: 50px;
-      margin: 0 5px;
-    }
-    &-others {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      p {
-        font-size: 30px;
-      }
-
-      &-maxMin {
-        p {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  &-footer {
-    ul {
-      display: flex;
-      li {
-        align-items: center;
-        border-right: 1px solid white;
-        display: flex;
-        height: 20px;
-        padding: 0 5px;
-        span {
-          p {
-            margin: 5px 0;
-          }
-          p:first-child {
-            color: rgba(255, 255, 255, 0.712);
-          }
-
-          p:last-child {
-            font-size: 12px;
-          }
-        }
-      }
-      li:last-child {
-        border: none;
-      }
-    }
-  }
-
   &-icon {
     img {
       width: 100px;
@@ -75,8 +22,9 @@
 
   &.rainy {
     background: linear-gradient(0deg, #596170 0%, #3e4554 100%);
-    .card__container-footer {
+    .footer__container {
       li {
+        padding: 0 10px;
         border-right: 1px solid rgba(122, 122, 122, 0.808);
         span {
           p:first-child {
@@ -97,8 +45,8 @@
       rgb(255, 255, 245) 100%
     );
     color: black;
-    .card__container-title,
-    .card__container-footer {
+    .title__container,
+    .footer__container {
       p {
         color: black;
         &:first-child {
@@ -106,8 +54,9 @@
         }
       }
     }
-    .card__container-footer {
+    .footer__container {
       li {
+        padding: 0 10px;
         border-right: 1px solid rgba(122, 122, 122, 0.808);
         &:last-child {
           border: none;
@@ -130,23 +79,6 @@
     );
   }
 
-  &-title {
-    font-size: 20px;
-    p {
-      color: rgb(236, 236, 236);
-    }
-  }
-
-  &-weather-period {
-    margin-bottom: 10%;
-    ul {
-      display: flex;
-      li {
-        margin: 0 3px;
-      }
-    }
-  }
-
   header {
     position: absolute;
     top: 0;
@@ -160,59 +92,7 @@
 
 @media (min-width: 750px) {
   .card__container {
-    &-degree {
-      &-current {
-        font-size: 60px;
-      }
-      &-others {
-        p {
-          font-size: 25px;
-        }
-
-        &-maxMin {
-          padding: 8px 0;
-          p {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-
-    &-footer {
-      ul {
-        li {
-          padding: 0 20px;
-          span {
-            p:first-child {
-              font-size: 18px;
-            }
-            p:last-child {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-    }
-
-    &-title {
-      font-size: 30px;
-    }
-
-    &-weather-period {
-      margin-bottom: 4%;
-      ul {
-        li {
-          margin: 0 15px;
-          div {
-            font-size: 20px;
-            img {
-              width: 70px;
-            }
-          }
-        }
-      }
-    }
-    header{
+    header {
       margin: 40px 100px;
     }
   }
@@ -220,7 +100,7 @@
 
 @media (min-width: 1200px) {
   .card__container {
-    header{
+    header {
       margin: 40px 400px;
     }
   }
