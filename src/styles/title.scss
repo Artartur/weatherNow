@@ -1,0 +1,12 @@
+.title__container {
+  font-size: 20px;
+  p {
+    color: rgb(236, 236, 236);
+  }
+}
+
+@media (min-width: 750px) {
+  .title__container {
+    font-size: 30px;
+  }
+}
