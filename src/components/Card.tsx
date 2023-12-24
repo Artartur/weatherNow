@@ -172,7 +172,10 @@ export default function Card({ cityName }: ICard) {
           </div>
         </div>
       ) : (
-        <h1>Wait a few seconds, we are loading the informations for you.</h1>
+        <span className="loading__container">
+          <p>Wait a few seconds...</p>
+          <p>we are loading the informations for you.</p>
+        </span>
       )}
     </div>
   );
