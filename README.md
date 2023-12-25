@@ -17,3 +17,9 @@ To use this application you will need to do a few things:
 To run the unit tests:
 
 1. run `npm run test` in your terminal
+
+To run the docker container:
+
+1. run docker pull artartur/weathernow:latest
+2. run docker run -it artartur/weathrnow:latest
+3. The application will open at `http://localhost:8080/` or `http://yourIp:8080/`
