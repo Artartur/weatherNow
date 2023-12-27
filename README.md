@@ -21,5 +21,5 @@ To run the unit tests:
 To run the docker container:
 
 1. run `docker pull artartur/weathernow:latest`
-2. run `docker run -it artartur/weathrnow:latest`
+2. run `docker run -it artartur/weathernow:latest`
 3. The application will open at `http://localhost:8080/` or `http://yourIp:8080/`
