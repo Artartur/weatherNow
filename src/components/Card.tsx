@@ -51,7 +51,7 @@ interface IWeatherInfos {
 
 export default function Card({ cityName }: ICard) {
   const [weatherData, setWeatherData] = useState<IApiData>();
-  const apiKey = import.meta.env?.VITE_REACT_APP_API_KEY;
+  const apiKey = '1de013cd32c3483eb83140448241505';
 
   const weatherInfos: IWeatherInfos = {
     afternoonIcon:
